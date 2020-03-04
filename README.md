@@ -1,7 +1,6 @@
 # Test - React / Redux 
 
 Story
-
 You are building a web service that will publish information about different events in your town (think meetup.com). 
 These events can have different topics that are defined in advance.
 
@@ -29,12 +28,6 @@ Simplicity and clarity are above all. Don't forget about industry standards, goo
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
 
-## Available Scripts
+## To run
 
-### `npm start`
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### `npm start` 
