@@ -78,7 +78,7 @@ const FilterEventForm = ({
 							name='topics'
 							isClearable
 							value={inputSelectedTopicValue.value}
-							options={stateArray.topicName}
+							options={stateArray.topicNames}
 							onChange={filterByTopic}
 							theme={(theme) => ({
 								...theme,
