@@ -22,7 +22,7 @@ Simplicity and clarity are above all. Don't forget about industry standards, goo
 
 ### Online
 
-...
+:link: [test--react-redux.herokuapp.com](https://test--react-redux.herokuapp.com)
 
 ---
 
