@@ -1,6 +1,7 @@
 # Test - React / Redux 
 
 Story
+
 You are building a web service that will publish information about different events in your town (think meetup.com). 
 These events can have different topics that are defined in advance.
 
