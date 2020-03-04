@@ -1,5 +1,5 @@
 import {
-	FETCH_CURRENTFILTERLIST_JSON_DATA,
+	FETCH_CURRENTFILTERS_DATA,
 	ADD_CUSTOM_FILTER,
 	ADD_FILTER_LIST,
 	DELETE_CUSTOM_FILTER,
@@ -24,10 +24,10 @@ const INITIAL_STATE = {
 
 const filterReducer = (state = INITIAL_STATE, action) => {
 	switch (action.type) {
-		case FETCH_CURRENTFILTERLIST_JSON_DATA:
+		case FETCH_CURRENTFILTERS_DATA:
 			return {
 				...state,
-				customFilters: action.payload.customFilters,
+				customFilters: action.payload
 			};
 		case ADD_CUSTOM_FILTER:
 			return {
