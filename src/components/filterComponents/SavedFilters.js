@@ -31,8 +31,8 @@ const SavedFilters = () => {
 			</Header>
 			<Container>
 				{stateCustomFilterArray.map((customFiltersValue) => (
-					<ListContainer styleSavedFilters='ListContainer'>
-						<ListWrapper styleSavedFilters='ListWrapper' key={customFiltersValue.id}>
+					<ListContainer styleSavedFilters='ListContainer' key={customFiltersValue.id}>
+						<ListWrapper styleSavedFilters='ListWrapper'>
 							<Fields>
 								{customFiltersValue.city === '' ? null : (
 									<Fragment>
