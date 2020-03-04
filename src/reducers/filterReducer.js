@@ -38,14 +38,12 @@ const filterReducer = (state = INITIAL_STATE, action) => {
 			return {
 				...state,
 				filteredList: action.payload
-				// filteredList: state.customFilters.filter(({ id }) => id !== action.payload)
 			};
 
 		case DELETE_CUSTOM_FILTER:
 			return {
 				...state,
-				customFilters: state.customFilters.filter(({ id }) => id !== action.payload) // action.payload OR action.id
-				//events: state.events.filter((event) => event.id !== action.payload) };
+				customFilters: state.customFilters.filter(({ id }) => id !== action.payload)
 			};
 
 		case SEARCH_CUSTOM_FILTER:
