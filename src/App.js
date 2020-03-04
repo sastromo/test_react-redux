@@ -20,7 +20,8 @@ function App() {
 	useEffect(
 		() => {
 			// fetch('http://localhost:3000/data.json')
-			fetch('./data/data.json')
+			// fetch('./data/data.json')
+			fetch('../public/data.json')
 
 				.then((res) => {
 					return res.json();
