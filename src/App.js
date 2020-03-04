@@ -44,7 +44,7 @@ function App() {
 					<Route path='/' exact component={Index} />
 					<Route path='/addEvents' component={AddEvents} />
 					<Route path='/savedFilters' component={SavedFilters} />
-					<Route component={NoMatch} />
+					{/* <Route component={NoMatch} /> */}
 				</Switch>
 			</AppStyle>
 		</Router>
