@@ -145,7 +145,7 @@ export const Events = () => {
 							isMulti
 							name='topics'
 							isClearable
-							options={stateArray.topicName}
+							options={stateArray.topicNames}
 							onChange={(e) =>
 								e === null ? null : dispatch(setSelectedTopic(e.map((topic) => topic.value)))}
 							theme={(theme) => ({
