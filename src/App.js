@@ -8,30 +8,23 @@ import SavedFilters from './components/filterComponents/SavedFilters';
 import NoMatch from './components/NoMatch';
 
 import { useDispatch } from 'react-redux';
-import { fetchEventsJsonData } from './actions/eventActions';
-import { fetchCustomfiltersJsonData } from './actions/filterActions';
+import { fetchEventsData,fetchTopicNamesData } from './actions/eventActions';
+import { fetchCustomfiltersData } from './actions/filterActions';
 
 //css
 import { AppStyle } from './style/styles';
+
+// fetch data.json
+import * as data from './data/data.json';
 
 function App() {
 	const dispatch = useDispatch();
 
 	useEffect(
 		() => {
-			// fetch('http://localhost:3000/data.json')
-			// fetch('./data/data.json')
-			fetch('../public/data.json')
-
-				.then((res) => {
-					return res.json();
-				})
-				.then((data) => {
-					console.log('data',data)
-					dispatch(fetchEventsJsonData(data));
-					dispatch(fetchCustomfiltersJsonData(data));
-
-				});
+			dispatch(fetchEventsData(data.events));
+			dispatch(fetchTopicNamesData(data.topicNames));
+			dispatch(fetchCustomfiltersData(data.customFilters));
 		},
 		[ dispatch ]
 	);
@@ -44,7 +37,7 @@ function App() {
 					<Route path='/' exact component={Index} />
 					<Route path='/addEvents' component={AddEvents} />
 					<Route path='/savedFilters' component={SavedFilters} />
-					{/* <Route component={NoMatch} /> */}
+					<Route component={NoMatch} />
 				</Switch>
 			</AppStyle>
 		</Router>
