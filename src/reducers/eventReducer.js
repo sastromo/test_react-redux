@@ -45,8 +45,7 @@ const eventReducer = (state = INITIAL_STATE, action) => {
 		case DELETE_EVENT:
 			return {
 				...state,
-				events: state.events.filter(({ id }) => id !== action.payload) // action.payload OR action.id
-				//events: state.events.filter((event) => event.id !== action.payload) };
+				events: state.events.filter(({ id }) => id !== action.payload)
 			};
 
 		case SET_NAME:
