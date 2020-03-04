@@ -1,0 +1,117 @@
+{
+	"events": [
+		{
+			"id": 1,
+			"name": "Second Impact",
+			"city": "Tokyo 3",
+			"date": "06/02/2020",
+			"time_start": "12:00",
+			"time_end": "13:30",
+			"topic": [ "Israfel" ]
+		},
+		{
+			"id": 2,
+			"name": "Human Instrumentality",
+			"city": "Bethany Base",
+			"date": "11/01/2020",
+			"time_start": "18:00",
+			"time_end": "19:30",
+			"topic": [ "Zeruel", "Gaghiel" ]
+		},
+		{
+			"id": 3,
+			"name": "MAGI Super Computer System",
+			"city": "Central Dogma",
+			"date": "21/02/2020",
+			"time_start": "18:00",
+			"time_end": "19:30",
+			"topic": [ "Lilith", "Shamshel" ]
+		},
+		{
+			"id": 4,
+			"name": "MAGI Super Computer System",
+			"city": "Geofront",
+			"date": "23/01/2020",
+			"time_start": "19:00",
+			"time_end": "20:30",
+			"topic": [ "Adam", "Sachiel", "Tabris", "Israfel" ]
+		},
+		{
+			"id": 5,
+			"name": "Dummy Plug System ",
+			"city": "Nerv",
+			"date": "21/02/2020",
+			"time_start": "14:00",
+			"time_end": "15:30",
+			"topic": [ "Sandalphon", "Lilith", "Zeruel" ]
+		},
+		{
+			"id": 6,
+			"name": "Antartic Expedition ",
+			"city": "Nerv",
+			"date": "31/02/2020",
+			"time_start": "11:00",
+			"time_end": "11:30",
+			"topic": [ "Zeruel" ]
+		},
+		{
+			"id": 7,
+			"name": "Second Impact ",
+			"city": "Tokyo 2",
+			"date": "25/12/2019",
+			"time_start": "08:00",
+			"time_end": "09:30",
+			"topic": [ "Ramiel" ]
+		}
+	],
+	"topicName": [
+		{ "value": "Adam", "label": "Adam" },
+		{ "value": "Lilith", "label": "Lilith" },
+		{ "value": "Shamshel", "label": "Shamshel" },
+		{ "value": "Ramiel", "label": "Ramiel" },
+		{ "value": "Sachiel", "label": "Sachiel" },
+		{ "value": "Tabris", "label": "Tabris" },
+		{ "value": "Gaghiel", "label": "Gaghiel" },
+		{ "value": "Sandalphon", "label": "Sandalphon" },
+		{ "value": "Israfel", "label": "Israfel" },
+		{ "value": "Zeruel", "label": "Zeruel" },
+		{ "value": "Armisael", "label": "Armisael" }
+    ],
+    "customFilters": [
+		{
+			"id": "1",
+			"city": "Tokyo 3",
+			"date": "22/02/2020",
+			"time_start": "18:00",
+			"topic": "Lilith"
+		},
+		{
+			"id": "2",
+			"city": "Central Dogma",
+			"time_start": "",
+			"date": "22/01/2020",
+			"topic": "Zeruel"
+		},
+		{
+			"id": "3",
+			"city": "",
+			"time_start": "19:00",
+			"date": "",
+			"topic": "Lilith"
+		},
+		{
+			"id": "4",
+			"city": "Tokyo 2",
+			"date": "",
+			"time_start": "01:00",
+			"topic": ""
+		},
+		{
+			"id": "5",
+			"city": "Bethany Base",
+			"time_start": "",
+			"date": "22/01/2020",
+			"topic": "Gaghiel"
+		}
+	]
+}
