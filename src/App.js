@@ -19,20 +19,17 @@ function App() {
 
 	useEffect(
 		() => {
-			fetch('http://localhost:3000/eventsList.json')
-				.then((res) => {
-					return res.json();
-				})
-				.then((eventsListData) => {
-					dispatch(fetchEventsJsonData(eventsListData));
-				});
+			// fetch('http://localhost:3000/data.json')
+			fetch('./data/data.json')
 
-			fetch('http://localhost:3000/CustomfiltersList.json')
 				.then((res) => {
 					return res.json();
 				})
-				.then((CustomfiltersListData) => {
-					dispatch(fetchCustomfiltersJsonData(CustomfiltersListData.customFilters));
+				.then((data) => {
+					console.log('data',data)
+					dispatch(fetchEventsJsonData(data));
+					dispatch(fetchCustomfiltersJsonData(data));
+
 				});
 		},
 		[ dispatch ]
