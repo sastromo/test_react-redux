@@ -102,17 +102,3 @@ const ListEvents = (props) => {
 };
 
 export default ListEvents;
-
-//old list
-// const listMap = list.map((e) => (
-// 	<h4 key={e.id}>
-// 		{e.name},
-// 		{e.city},
-// 		{'__  '}
-// 		{e.date}
-// 		{'  __'},
-// 		{e.time_start},
-// 		{e.time_end}
-// 		{e.topic.map((item) => <span key={item}>,{item}</span>)}
-// 	</h4>
-// ));
