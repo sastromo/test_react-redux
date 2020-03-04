@@ -1,5 +1,6 @@
 import {
-	FETCH_EVENTSLIST_JSON_DATA,
+	FETCH_EVENTS_DATA,
+	FETCH_TOPICNAMES_DATA,
 	ADD_EVENT,
 	DELETE_EVENT,
 	SET_NAME,
@@ -10,11 +11,9 @@ import {
 	SET_SELECTED_TOPIC
 } from '../actions/types';
 
-//EXPORT DATA FROM JSON FILE???
-
 const INITIAL_STATE = {
 	events: [],
-	topicName: [],
+	topicNames: [],
 	inputNameValue: '',
 	inputCityValue: '',
 	inputDateValue: '',
@@ -25,11 +24,16 @@ const INITIAL_STATE = {
 
 const eventReducer = (state = INITIAL_STATE, action) => {
 	switch (action.type) {
-		case FETCH_EVENTSLIST_JSON_DATA:
+		case FETCH_EVENTS_DATA:
 			return {
 				...state,
-				events: action.payload.events,
-				topicName:action.payload.topicName
+				events: action.payload
+			};
+
+		case FETCH_TOPICNAMES_DATA:
+			return {
+				...state,
+				topicNames: action.payload
 			};
 
 		case ADD_EVENT:
