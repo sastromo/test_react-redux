@@ -1,5 +1,5 @@
 import {
-	FETCH_CURRENTFILTERLIST_JSON_DATA,
+	FETCH_CURRENTFILTERS_DATA,
 	ADD_CUSTOM_FILTER,
 	ADD_FILTER_LIST,
 	DELETE_CUSTOM_FILTER,
@@ -11,10 +11,9 @@ import {
 	DISABLE_SAVE_FILTER_BUTTON
 } from '../actions/types';
 
-
-export const fetchCustomfiltersJsonData = (JsonData) => {
+export const fetchCustomfiltersData = (JsonData) => {
 	return {
-		type: FETCH_CURRENTFILTERLIST_JSON_DATA,
+		type: FETCH_CURRENTFILTERS_DATA,
 		payload: JsonData
 	};
 };
