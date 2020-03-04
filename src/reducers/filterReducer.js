@@ -27,7 +27,7 @@ const filterReducer = (state = INITIAL_STATE, action) => {
 		case FETCH_CURRENTFILTERLIST_JSON_DATA:
 			return {
 				...state,
-				customFilters: action.payload,
+				customFilters: action.payload.customFilters,
 			};
 		case ADD_CUSTOM_FILTER:
 			return {
