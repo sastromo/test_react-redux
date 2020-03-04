@@ -62,8 +62,8 @@ const ListEvents = (props) => {
 			) : (
 				<Container>
 					{sortedTimeStampDate.map((value) => (
-						<ListContainer>
-							<ListWrapper key={value.id}>
+						<ListContainer key={value.id}>
+							<ListWrapper >
 								<DateDiv>
 									<DateDate>
 										{new Date(value.date).toLocaleDateString('en-GB', {
@@ -83,8 +83,8 @@ const ListEvents = (props) => {
 										<City>{value.city}</City>
 										<TopicList>
 											{value.topic.map((item) => (
-												<Fragment>
-													<TopicItem key={item}>
+												<Fragment key={item}>
+													<TopicItem >
 														<Topic>{item}</Topic>
 													</TopicItem>
 												</Fragment>
