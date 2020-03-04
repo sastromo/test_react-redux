@@ -37,49 +37,33 @@ export const filterEngine = (
 	return filtered;
 };
 
-////////////
+//
 export const checkEventMatchedFilter = (customFilters, inputValuesObj) => {
 	const getFilteredValues = (list, filterParams) => {
-		console.log('------------------------------------------');
-
 		return list.reduce((newList, item) => {
 			const matchesPerKey = Object.keys(filterParams).map((filterKey) => {
 				if (filterKey !== 'topic') {
-					console.log(
-						'[',
-						filterParams[filterKey],
-						'=',
-						item[filterKey],
-						']->',
-						filterParams[filterKey] === item[filterKey]
-					);
 					return filterParams[filterKey] === item[filterKey];
 				} else {
 					const comparison = !!filterParams[filterKey].find((match) => {
-						console.log('[', match, '=', item[filterKey], ']->', match === item[filterKey]);
 						return match === item[filterKey];
 					});
 					return comparison;
 				}
 			});
-			console.log('TCL: getFilteredValues -> matchesPerKey', matchesPerKey);
 
 			const allFiltersPass = matchesPerKey.find((match) => {
 				return match === true;
 			});
 
-			console.log('TCL: getFilteredValues -> allFiltersPass', allFiltersPass);
 			if (allFiltersPass) {
-				console.log('TCL: getFilteredValues -> item', item);
 				return [ ...newList, item ];
 			}
-			// Se passou no teste, adiciona o item a lista de items filtrados.
-			console.log('------------------------------------------');
+
 			return newList;
 		}, []);
 	};
 
 	const filteredValues = getFilteredValues(customFilters, inputValuesObj);
-	console.log('TCL: checkEventMatchedFilter -> filteredValues', filteredValues);
 	filteredValues.length > 0 && alert(`Event matched in ${filteredValues.length} Saved Filters`);
 };
