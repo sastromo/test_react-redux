@@ -1,5 +1,6 @@
 import {
-	FETCH_EVENTSLIST_JSON_DATA,
+	FETCH_EVENTS_DATA,
+	FETCH_TOPICNAMES_DATA,
 	ADD_EVENT,
 	DELETE_EVENT,
 	SET_NAME,
@@ -10,9 +11,15 @@ import {
 	SET_SELECTED_TOPIC
 } from '../actions/types';
 
-export const fetchEventsJsonData = (JsonData) => {
+export const fetchEventsData = (JsonData) => {
 	return {
-		type: FETCH_EVENTSLIST_JSON_DATA,
+		type: FETCH_EVENTS_DATA,
+		payload: JsonData
+	};
+};
+export const fetchTopicNamesData = (JsonData) => {
+	return {
+		type: FETCH_TOPICNAMES_DATA,
 		payload: JsonData
 	};
 };
