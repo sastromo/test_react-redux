@@ -11,7 +11,7 @@ import {
 	setTimeFilter,
 	setTopicFilter,
 	setDisableSaveFiltersButton
-} from '../actions/filterActions';
+} from '../store/actions/filterActions';
 
 import FilterEventForm from './filterComponents/FilterEventForm';
 import ListEvents from './eventsComponents/ListEvents';
