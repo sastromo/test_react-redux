@@ -13,7 +13,7 @@ import {
 	setTimeStart,
 	setTimeEnd,
 	setSelectedTopic
-} from '../../actions/eventActions';
+} from '../../store/actions/eventActions';
 
 //css
 import { Wrapper, InputGroup, Header, Paragraph, InputLabel, InputControl, Dropdown } from '../../style/styles';
