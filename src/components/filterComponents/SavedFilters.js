@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { deleteCustomFilter } from '../../actions/filterActions';
+import { deleteCustomFilter } from '../../store/actions/filterActions';
 
 import Button from '../commonComponents/Button';
 
