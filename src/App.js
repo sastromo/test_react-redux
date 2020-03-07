@@ -8,8 +8,8 @@ import SavedFilters from './components/filterComponents/SavedFilters';
 import NoMatch from './components/NoMatch';
 
 import { useDispatch } from 'react-redux';
-import { fetchEventsData,fetchTopicNamesData } from './actions/eventActions';
-import { fetchCustomfiltersData } from './actions/filterActions';
+import { fetchEventsData,fetchTopicNamesData } from './store/actions/eventActions';
+import { fetchCustomfiltersData } from './store/actions/filterActions';
 
 //css
 import { AppStyle } from './style/styles';
