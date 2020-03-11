@@ -1,6 +1,6 @@
 # Test - React / Redux 
 
-Story
+Story:
 
 You are building a web service that will publish information about different events in your town (think meetup.com). 
 These events can have different topics that are defined in advance.
@@ -13,7 +13,8 @@ These events can have different topics that are defined in advance.
 3. Users can save their filters and get back to them in the future
 4. When a new event is added to the system that matches a saved filter, the user is notified immediately (if they are on the page at the time), and also by email.
 
-Comments
+Comments:
+
 Simplicity and clarity are above all. Don't forget about industry standards, good coding style and best practices.
 
 ### Project status
