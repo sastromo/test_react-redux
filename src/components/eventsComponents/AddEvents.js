@@ -59,6 +59,7 @@ export const Events = () => {
 	};
 
 	const cleanFilterInputs = () => {
+		//FIXME: FIX BUG (rep: clean adds empty custom filter states..)
 		dispatch(setName(''));
 		dispatch(setCity(''));
 		dispatch(setDate(''));
