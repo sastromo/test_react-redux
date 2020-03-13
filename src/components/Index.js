@@ -52,7 +52,7 @@ export default function Index() {
 
 	////
 	const filterByCity = ({ target: { value: inputValue } }) => {
-    	checkDisableSaveFiltersButton(inputValue);
+		checkDisableSaveFiltersButton(inputValue);
 		dispatch(setCityFilter(inputValue));
 	};
 
@@ -82,16 +82,21 @@ export default function Index() {
 	const onSubmitSaveCustomFilter = (e) => {
 		e.preventDefault();
 
-		const customFilter = {
-			id: uuid(),
-			city: inputCityFilterValue,
-			date: inputDateFilterValue,
-			time_start: inputTimeFilterValue,
-			topic: inputTopicFilterValue
-		};
-
-		dispatch(addCustomFilter(customFilter));
-		e.target.reset();
+		if (
+			inputCityFilterValue !== '' ||
+			inputDateFilterValue !== '' ||
+			inputTimeFilterValue !== '' ||
+			inputTopicFilterValue !== ''
+		) {
+			const customFilter = {
+				id: uuid(),
+				city: inputCityFilterValue,
+				date: inputDateFilterValue,
+				time_start: inputTimeFilterValue,
+				topic: inputTopicFilterValue
+			};
+			dispatch(addCustomFilter(customFilter));
+		}
 		dispatch(setDisableSaveFiltersButton(true));
 		cleanFilterInputs();
 	};
